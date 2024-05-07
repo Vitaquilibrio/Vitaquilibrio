@@ -1,0 +1,192 @@
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #11698E;
+        color: #333;
+    }
+
+    header {
+        background-color: #19456B;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    header img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    nav {
+        background-color: #11698E;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #FFFFFF;
+        color: #F8F1F1;
+    }
+
+    section {
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    section h2 {
+        font-weight: bold;
+    }
+
+    section p {
+        font-weight: normal;
+    }
+
+    section:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    section:nth-child(even) {
+        background-color: #16C79A;
+    }
+
+    footer {
+        background-color: #19456B;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between; /* Alinea los elementos horizontalmente */
+        margin-bottom: 20px; /* Añade un margen inferior para separar los iconos de las redes sociales */
+        width: 100%; /* Ajusta el ancho del contenedor */
+        max-width: 900px; /* Establece un ancho máximo */
+    }
+
+    .contacto,
+    .suscripcion {
+        flex: 1; /* Divide el espacio disponible en dos partes iguales */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .social-icons li {
+        margin: 0 10px;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover img {
+        transform: scale(1.2);
+    }
+
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        animation: jump 500ms infinite alternate;
+    }
+
+    @keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .whatsapp-icon img {
+        width: 80px;
+        height: auto;
+    }
+
+    .footer-logo {
+        position: absolute; /* Fija la posición del logo */
+        bottom: -310px; /* Ajusta la distancia desde la parte inferior */
+        left: 10%; /* Centra el logo horizontalmente */
+        transform: translateX(-50%); /* Ajusta el centrado horizontal */
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+    }
+    .social-text {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    /* Estilos para el formulario de suscripción */
+    .suscripcion {
+        flex: 1; /* Ajusta el tamaño de la sección de suscripción */
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .suscripcion label {
+        margin-bottom: 10px;
+    }
+
+    .suscripcion input[type="email"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 250px;
+    }
+
+    .suscripcion button {
+        padding: 8px 20px;
+        background-color: #3399FF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .suscripcion button:hover {
+        background-color: #66CCFF;
+    }
